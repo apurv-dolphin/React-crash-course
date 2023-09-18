@@ -1,23 +1,11 @@
 
-# Welcome to react-component-depot!
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/26d63fc5-4fe5-44fd-9d40-fc4d332e360c/deploy-status)](https://app.netlify.com/sites/react-component-depot/deploys)
-
-A repository contains an extensive list of react components built from scratch with youtube linked tutorials. 
-
- https://react-component-depot.netlify.app
-
-# Tutorials
-
-All the components in this repo is covered by the tutorials on the [D'Coders YouTube channel](https://www.youtube.com/channel/UCdItDI6oTgPW7l9WOJI7ItA/). The link for the tutorial will be given at the top of each page.
+# Welcome to react-component-Apurv!
 
 # Project
 
 Project is bootstrapped with [create-react-app](https://create-react-app.dev/) and uses react V16.13.1
 
 ## Folder Structure
-
-Please follow the folder structure of CRA. You can find more in this in their official github page.
 
 ```
 react-component-depot
@@ -63,6 +51,8 @@ react-component-depot
 
 
 # Tutorials List
+
+// For youtube videos, i suggest the YouTube channel and below 
 
 - Building a datatable in ReactJS from scratch with pagination, search and sorting [[Demo]](https://react-component-depot.netlify.app/data-table)  [[Tutorial]](https://youtu.be/emX5KvZ6Hbo)
 - File Upload with cancel button and progress bar In ReactJS [[Demo]](https://react-component-depot.netlify.app/file-upload)[[Tutorial]](https://youtu.be/_XD5ko7Fy9E)
