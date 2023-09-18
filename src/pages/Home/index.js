@@ -36,19 +36,19 @@ const Home = () => {
                 {AppConfig.youtubeVideos.map(video => {
                     return (
                         <div className="col-md-4 p-3 card-hover" key={video.id}>
-                            <div class="card">
+                            <div className="card">
                                 <a
                                     href={`https://www.youtube.com/watch?v=${video.id}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <img
-                                        class="card-img-top"
+                                        className="card-img-top"
                                         src={`https://img.youtube.com/vi/${video.id}/sddefault.jpg`}
                                         alt="Card cap"
                                     />
-                                    <div class="card-body">
-                                        <h5 class="card-title">
+                                    <div className="card-body">
+                                        <h5 className="card-title">
                                             {video.title}
                                         </h5>
                                     </div>

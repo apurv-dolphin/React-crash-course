@@ -33,12 +33,12 @@ const CancelableFetchRequest = () => {
   };
 
   const cancelRequest = () =>
-    abortController.current && abortController.current.abort();
+  abortController.current && abortController.current.abort();
 
   return (
     <>
       <Header title="Canelable fetch request (Cancelable File Upload)" />
-      
+
       <ExternalInfo page="cancelableFetch" />
 
       <div className="row justify-content-center bg-light">

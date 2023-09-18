@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 import "components/FontawsomeIcons";
 
 import "./App.css";
@@ -27,7 +27,7 @@ function App() {
                         <Route path="/" exact>
                             <Home />
                         </Route>
-                        <Route>
+                        <Route path="*">
                             <PageNotFound />
                         </Route>
                     </Switch>

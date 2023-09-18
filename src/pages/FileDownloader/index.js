@@ -53,15 +53,15 @@ const FileDownloader = () => {
               <div className="col" key={idx}>
                 <div className="card ">
                   <div className="card-body" key={idx}>
-                    <img className="card-img-top mb-3" src={file.thumb} />
+                    <img className="card-img-top mb-3" src={file.thumb} alt=""/>
                     <h5 className="card-title">{file.name}</h5>
 
-                    <a
+                    <div
                       className="btn btn-primary cursor-pointer text-white"
                       onClick={() => download(file)}
                     >
                       Download <FontAwesomeIcon icon="download" />
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

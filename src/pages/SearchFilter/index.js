@@ -17,7 +17,7 @@ const SearchFilter = () => {
                 country.region.toLowerCase().includes(search.toLowerCase())
             );
         });
-    }, [search, CountriesList]);
+    }, [search]);
 
     return (
         <>
@@ -67,7 +67,7 @@ const CountryListItem = ({ name, flag, region }) => {
     return (
         <li className="list-group-item d-flex">
             <div className="d-inline">
-                <img src={flag} style={{ width: "60px" }} />
+                <img src={flag} style={{ width: "60px" }} alt={name} />
             </div>
             <div className="col pt-2">
                 {name} <span className="badge badge-info">{region}</span>

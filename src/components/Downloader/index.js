@@ -75,6 +75,7 @@ const DownloadItem = ({ name, file, filename, removeFile }) => {
   }, []);
 
   const formatBytes = (bytes) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+  console.log(formatBytes);
 
   return (
     <li className="list-group-item">

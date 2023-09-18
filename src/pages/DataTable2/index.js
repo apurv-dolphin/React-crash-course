@@ -70,7 +70,6 @@ const DataTable2 = () => {
         );
     }, [comments, currentPage, search, sorting]);
 
-    console.log(commentsData);
     return (
         <>
             <Header title="Building a data table in react" />

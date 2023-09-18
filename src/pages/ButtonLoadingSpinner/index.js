@@ -93,10 +93,6 @@ const ButtonLoadingSpinner = () => {
         },
         eventTimeout: 2000
       });
-      /* window.dataLayer.push(function(){
-        console.log("RESET CALLBACK TRIGGERED")
-        this.reset();
-      }); */
     }
   }
 
@@ -181,7 +177,7 @@ const ButtonLoadingSpinner = () => {
         <div className="col text-center">
           <h2>Google GTM Tracking</h2>
           <p>
-            
+
           </p>
 
           <p>
