@@ -1,44 +1,42 @@
 import React, { useState, useEffect } from "react";
 
 function useThemeSwitcher() {
-    const [mode, setMode] = useState(() => localStorage.getItem("mode"));
+  const [mode, setMode] = useState(() => localStorage.getItem("mode"));
 
-    useEffect(() => {
-        window.addEventListener("storage", setPreferedTheme);
-        return () => {
-            window.removeEventListener("storage", setPreferedTheme);
-        };
-    }, []);
-
-    const setPreferedTheme = () => {
-        const _mode = localStorage.getItem("mode");
-        if (_mode) {
-            setMode(_mode);
-        } else {
-            setMode("light");
-        }
+  useEffect(() => {
+    window.addEventListener("storage", setPreferedTheme);
+    return () => {
+      window.removeEventListener("storage", setPreferedTheme);
     };
+  }, []);
 
-    useEffect(() => {
-        if (mode === "dark") {
-            document.body.classList.add("dark-mode");
-            localStorage.setItem("mode", "dark");
-        } else {
-            document.body.classList.remove("dark-mode");
-            localStorage.setItem("mode", "light");
-        }
-    }, [mode]);
+  const setPreferedTheme = () => {
+    const _mode = localStorage.getItem("mode");
+    if (_mode) {
+      setMode(_mode);
+    } else {
+      setMode("light");
+    }
+  };
 
-    return (
-        <a
-            className="cursor-pointer"
-            onClick={() =>
-                setMode(mode => (mode === "dark" ? "light" : "dark"))
-            }
-        >
-            <small> {mode === "dark" ? "Light" : "Dark"} Mode</small>
-        </a>
-    );
+  useEffect(() => {
+    if (mode === "dark") {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("mode", "dark");
+    } else {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("mode", "light");
+    }
+  }, [mode]);
+
+  return (
+    <span
+      className="cursor-pointer"
+      onClick={() => setMode((mode) => (mode === "dark" ? "light" : "dark"))}
+    >
+      <small> {mode === "dark" ? "Light" : "Dark"} Mode</small>
+    </span>
+  );
 }
 
 export default useThemeSwitcher;

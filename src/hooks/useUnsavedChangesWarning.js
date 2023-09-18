@@ -12,7 +12,7 @@ const useUnsavedChangesWarning = (
         return () => {
             window.onbeforeunload = null;
         };
-    }, [isDirty]);
+    }, [isDirty, message]);
 
     const routerPrompt = <Prompt when={isDirty} message={message} />;
 

@@ -13,7 +13,7 @@ const useButtonLoader = (defaultText = "Load", loadingText = "Loading...") => {
             element.current.disabled = false;
             element.current.innerHTML = defaultText;
         }
-    }, [isLoading]);
+    }, [defaultText, isLoading, loadingText]);
 
     return [element, setLoading];
 };
