@@ -11,30 +11,29 @@ import PageNotFound from "pages/PageNotFound";
 import Home from "pages/Home";
 
 function App() {
-    return (
-        <Router>
-            <Layout>
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Switch>
-                        {routes.map((route) => (
-                            <Route
-                                path={route.path}
-                                component={route.component}
-                                key={route.path}
-                            />
-                        ))}
-
-                        <Route path="/" exact>
-                            <Home />
-                        </Route>
-                        <Route path="*">
-                            <PageNotFound />
-                        </Route>
-                    </Switch>
-                </Suspense>
-            </Layout>
-        </Router>
-    );
+  return (
+    <Router>
+      <Layout>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
+            {routes.map((route) => (
+              <Route
+                path={route.path}
+                component={route.component}
+                key={route.path}
+              />
+            ))}
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
+            </Route>
+          </Switch>
+        </Suspense>
+      </Layout>
+    </Router>
+  );
 }
 
 export default App;

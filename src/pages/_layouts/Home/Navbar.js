@@ -21,7 +21,7 @@ export const Navbar = () => {
       <Scrollbars style={{ width: "100%", height: "100%" }}>
         <div className="sidebar-header">
           <h3>
-            <Link to="/">React-component-depot</Link>
+            <Link to="/">React-component-apurv</Link>
           </h3>
           <p className="mb-0 text-white">{ThemeSwitcher}</p>
           <p className="mb-0 mt-2">
@@ -29,10 +29,10 @@ export const Navbar = () => {
               <a
                 className="github-button mr-3"
                 target=""
-                href="https://github.com/codegeous/react-component-depot"
+                href="https://github.com/apurv-dolphin/React-crash-course"
                 data-size="large"
                 data-show-count="true"
-                aria-label="Star codegeous/react-component-depot on GitHub"
+                aria-label="apurv-dolphin/React-crash-course"
               >
                 Star
               </a>
@@ -49,15 +49,7 @@ export const Navbar = () => {
         </div>
 
         <ul className="list-unstyled components">
-          <p>
-            <a
-              href="https://www.youtube.com/channel/UCdItDI6oTgPW7l9WOJI7ItA/videos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              D'Coders Youtube Page
-            </a>
-          </p>
+          <p>Apurv components</p>
 
           {routes
             .filter((route) => route.navbar !== "")
