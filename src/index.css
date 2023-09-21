@@ -95,12 +95,12 @@ a:focus {
   z-index: 999;
   background: #126ecf;
   color: #fff;
-  transition: margin-left 0.3s linear;
+  transition: margin-left 0.4s linear;
 }
 
 #sidebar.active {
   margin-left: -250px;
-  transition: margin-left 0.3s linear;
+  transition: margin-left 0.4s linear;
 }
 
 #sidebar .sidebar-header {
@@ -190,7 +190,7 @@ a.article:hover {
   width: calc(100% - 250px);
   padding: 40px;
   min-height: 100vh;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
   position: absolute;
   top: 0;
   right: 0;

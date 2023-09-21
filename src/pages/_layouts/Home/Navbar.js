@@ -10,6 +10,8 @@ export const Navbar = () => {
 
   const isNavbarVisible = useSelector((state) => state.layout.navbar);
 
+  console.log(isNavbarVisible);
+
   const location = useLocation();
 
   const getNavLinkClass = (path) => {
