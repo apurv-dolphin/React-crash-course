@@ -23,8 +23,8 @@ export const Navbar = () => {
           <h3>
             <Link to="/">React-component-apurv</Link>
           </h3>
-          <p className="mb-0 text-white">{ThemeSwitcher}</p>
-          <p className="mb-0 mt-2">
+          <div className="mb-0 text-white">{ThemeSwitcher}</div>
+          <div className="mb-0 mt-2">
             <div>
               <a
                 className="github-button mr-3"
@@ -45,7 +45,7 @@ export const Navbar = () => {
               data-count="default"
               style={{ height: "35px" }}
             ></div>
-          </p>
+          </div>
         </div>
 
         <ul className="list-unstyled components">

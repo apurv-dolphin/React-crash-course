@@ -30,7 +30,6 @@ const DataTable = () => {
         .then((json) => {
           hideLoader();
           setComments(json);
-          console.log(json);
         });
     };
 
