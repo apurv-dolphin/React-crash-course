@@ -8,7 +8,7 @@ const useButtonLoader = (defaultText = "Load", loadingText = "Loading...") => {
         if (isLoading) {
             element.current.disabled = true;
             element.current.innerHTML =
-                '<i class="fas fa-spinner fa-spin"></i> ' + loadingText;
+                '<i className="fas fa-spinner fa-spin"></i> ' + loadingText;
         } else {
             element.current.disabled = false;
             element.current.innerHTML = defaultText;
