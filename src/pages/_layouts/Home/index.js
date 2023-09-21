@@ -36,7 +36,7 @@ const Home = ({ children }) => {
               </a>{" "}
               and give a{" "}
               <a
-                href="https://github.com/codegeous/react-component-depot"
+                href="https://github.com/apurv-dolphin/React-crash-course"
                 rel="noopener noreferrer"
               >
                 <span role="img" aria-label="star">
@@ -53,7 +53,7 @@ const Home = ({ children }) => {
       </div>
 
       <a
-        href="https://github.com/codegeous/react-component-depot"
+        href="https://github.com/apurv-dolphin/React-crash-course"
         target="_blank"
         rel="noopener noreferrer"
       >

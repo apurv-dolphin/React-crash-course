@@ -91,7 +91,7 @@ export const Navbar = () => {
         <ul className="list-unstyled CTAs">
           <li>
             <a
-              href="https://github.com/codegeous/react-component-depot"
+              href="https://github.com/apurv-dolphin/React-crash-course"
               target="_blank"
               rel="noopener noreferrer"
               className="download"

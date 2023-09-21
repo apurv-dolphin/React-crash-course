@@ -1,5 +1,5 @@
 const GIT_REPO =
-  "https://github.com/codegeous/react-component-depot/tree/master/src/";
+  "https://github.com/apurv-dolphin/React-crash-course/tree/main/src/";
 const YOUTUBE_BASE = "https://youtu.be/";
 
 export default {
@@ -145,7 +145,7 @@ export default {
     debouncedSearch: {
       tutorial: `${YOUTUBE_BASE}Wf7INnelvkI`,
       code: `${GIT_REPO}pages/SearchFilterDebounced/index.js`,
-    }
+    },
   },
   youtubeVideos: [
     {
