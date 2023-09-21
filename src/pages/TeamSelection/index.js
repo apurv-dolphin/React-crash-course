@@ -97,7 +97,7 @@ const Player = ({
   playerType,
   onDropPlayer,
 }) => {
-  const [{ isDragging }, dragRef] = useDrag({
+  const [, dragRef] = useDrag({
     item: {
       type: playerType,
       index,
@@ -122,6 +122,7 @@ const Player = ({
             <img
               src={photo}
               className="img-thumbnail border-secondary rounded-circle"
+              alt="thumbnail"
             />
           </div>
           <div className="col-md-9">

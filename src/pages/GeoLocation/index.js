@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "components/Header";
 import ExternalInfo from "components/ExternalInfo";
-import AppConfig from "App.config";
 
 const GeoLocation = () => {
   const [details, setDetails] = useState(null);

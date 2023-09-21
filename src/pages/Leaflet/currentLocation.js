@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useRef } from "react";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
 
 import "leaflet/dist/leaflet.css";

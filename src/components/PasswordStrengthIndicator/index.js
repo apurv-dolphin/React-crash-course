@@ -25,6 +25,7 @@ const PasswordStrengthIndicator = ({
 };
 
 const PasswordStrengthIndicatorItem = ({ isValid, text }) => {
+    console.log(isValid, text);
     const highlightClass = isValid
         ? "text-success"
         : isValid !== null

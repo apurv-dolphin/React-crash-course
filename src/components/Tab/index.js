@@ -25,13 +25,12 @@ const Tab = ({ children, active = 0 }) => {
       <ul className="nav nav-tabs">
         {tabsData.map(({ tab }, idx) => (
           <li className="nav-item">
-            <a
+            <button
               className={`nav-link ${idx === activeTab ? "active" : ""}`}
-              href="#"
               onClick={() => setActiveTab(idx)}
             >
               {tab}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

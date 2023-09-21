@@ -39,7 +39,7 @@ const DataTable2 = () => {
         };
 
         getData();
-    }, []);
+    }, [hideLoader, showLoader]);
 
     const commentsData = useMemo(() => {
         let computedComments = comments;

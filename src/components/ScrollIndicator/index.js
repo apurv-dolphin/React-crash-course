@@ -3,6 +3,7 @@ import { useWindowScroll } from "react-use";
 
 const ScrollIndicator = () => {
     const { x, y } = useWindowScroll();
+    console.log(x);
     const [scrolled, setScrolled] = useState(0);
 
     useEffect(() => {

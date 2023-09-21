@@ -22,12 +22,13 @@ const SearchFilterDebounced = () => {
         country.region.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
       );
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm, CountriesList]);
 
   return (
     <>
       <Header title="Country Search - Debounced" />
-      
+
       <ExternalInfo page="debouncedSearch" />
 
       <div className="row justify-content-center mt-4">
@@ -69,7 +70,7 @@ const CountryListItem = ({ name, flag, region }) => {
   return (
     <li className="list-group-item d-flex">
       <div className="d-inline">
-        <img src={flag} style={{ width: "60px" }} />
+        <img src={flag} style={{ width: "60px" }} alt="flag" />
       </div>
       <div className="col pt-2">
         {name} <span className="badge badge-info">{region}</span>

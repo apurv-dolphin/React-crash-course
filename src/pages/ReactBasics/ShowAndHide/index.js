@@ -6,7 +6,6 @@ import imgDoctor from "resources/images/doctor.svg";
 import imgChef from "resources/images/chef.svg";
 import imgPolice from "resources/images/policeman.svg";
 import imgEngineer from "resources/images/engineer.svg";
-import AppConfig from "App.config";
 import ExternalInfo from "components/ExternalInfo";
 
 const ShowAndHide = () => {

@@ -28,7 +28,11 @@ const ImageZoom = () => {
                   defaultPositionY={1}
                 >
                   <TransformComponent>
-                    <img src={IMAGES[0]} style={{ width: "100%" }} />
+                    <img
+                      src={IMAGES[0]}
+                      style={{ width: "100%" }}
+                      alt="not found"
+                    />
                   </TransformComponent>
                 </TransformWrapper>
               </div>
@@ -63,7 +67,11 @@ const ImageZoom = () => {
                         </button>
                       </div>
                       <TransformComponent>
-                        <img src={IMAGES[1]} style={{ width: "100%" }} />
+                        <img
+                          src={IMAGES[1]}
+                          style={{ width: "100%" }}
+                          alt="not found"
+                        />
                       </TransformComponent>
                     </>
                   )}

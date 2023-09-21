@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from "react";
 import Header from "components/Header";
 
@@ -9,6 +10,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 
 const PolygonMap = () => {
+  // eslint-disable-next-line no-unused-vars
   const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
   const [mapLayers, setMapLayers] = useState([]);
 
