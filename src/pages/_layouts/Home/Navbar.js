@@ -37,7 +37,6 @@ export const Navbar = () => {
                 Star
               </a>
             </div>
-
             <div
               className="g-ytsubscribe ml-3"
               data-channelid="UCdItDI6oTgPW7l9WOJI7ItA"
